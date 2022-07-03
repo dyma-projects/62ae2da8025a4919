@@ -1,6 +1,17 @@
-<p>exercice1 works!</p>
-<!-- La liaison de binding -->
-<input type="text" value='defauktValueInput'/>
+<div> 
+    <h4>EXERCICE 1</h4>
+    <section>
+        <!-- La liaison de binding -->
+        Input : <input type="text" [value]='defauktValueInput'>
 
-<!-- La liaison d'événements -->
-<div (click)="displayNameInputInUpperCase()">{{defauktValueInput}}</div>
+        <!-- La liaison d'événements -->
+        <div (click)="displayNameInputInUpperCase()">click here to uppercase : {{defauktValueInput}}</div>
+
+        <!-- Double data binding -->
+        <div>
+            <input [(ngModel)]="comment">
+            <b>{{comment}}</b>
+        </div>
+    </section>
+    
+</div>

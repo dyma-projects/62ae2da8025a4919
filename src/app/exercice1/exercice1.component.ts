@@ -1,22 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-exercice1',
   templateUrl: './exercice1.component.html',
   styleUrls: ['./exercice1.component.css']
 })
-export class Exercice1Component implements OnInit {
+export class Exercice1Component {
 
-  private defauktValueInput: string;
+  defauktValueInput: string;
+  comment: string;
   constructor() { 
     this.defauktValueInput = "My Name is Zakia";
-  }
-
-  ngOnInit(): void {
+    this.comment = "blablabla";
   }
 
   displayNameInputInUpperCase(){
-    this.defauktValueInput.toUpperCase();
+    this.defauktValueInput = this.defauktValueInput.toUpperCase();
 
   }
 }
